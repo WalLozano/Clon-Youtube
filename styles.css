@@ -469,6 +469,7 @@ nav {
 .sidebar {
   display: none;
 }
+
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
@@ -514,11 +515,7 @@ nav {
 }
 
 .gridVideos2 {
-  grid-template-columns: repeat(4, 350px);
-}
-
-.gridVideos2 img{
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(3, 350px);
 }
 
 
