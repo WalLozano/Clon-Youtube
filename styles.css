@@ -82,11 +82,9 @@ nav {
 }
 
 .nav-middle .search {
-  background-color: #222222;
   padding-right: 10px;
   height: 45px;
   border-radius: 50px;
-  gap: 12px;
 }
 
 .nav-middle .search img {
@@ -105,6 +103,20 @@ nav {
 
 }
 
+.lupa {
+  display: flex;
+  align-items: center;
+  background-color: #2D2D2D;
+  border-radius: 0 50px 50px 0;
+  height: 45px;
+  cursor: pointer;
+}
+
+#lupa{
+  background-color: transparent;
+}
+
+
 .nav-middle .micro img {
   background-color: #181818;
 
@@ -114,7 +126,6 @@ nav {
   background-color: #5a5a5a
 
 }
-
 .nav-middle .micro:hover {
   background-color: #5a5a5a;
 }
@@ -324,6 +335,13 @@ nav {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #5a5a5a;
+  transition: 0.3s;
+}
+
+
+
 .caja {
   width: 360px;
   height: 205px;
@@ -369,4 +387,139 @@ nav {
 
 .titulo {
   font-weight: 600;
+}
+
+
+/* responsive */
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  .buttons-bar {
+    overflow-x: scroll;
+    left: 2%;
+    width: 100vw;
+    gap: 10px;
+  }
+  .buttons-bar2 {
+    overflow-x: scroll;
+    left: 2%;
+    width: 90vw;
+    gap: 10px;
+  }
+.gridVideos {
+  grid-template-columns: 350px;
+  width: 100vw;
+  height: 100vh;
+  } 
+}
+
+.nav-middle {
+  display: none;
+}
+
+#buttonMenu {
+  display: none;
+}
+
+.main-grid {
+  grid-template-columns: 0% 100%;
+  padding-left: 5%;
+}
+
+.nav-right {
+  padding-right: 5%;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+.nav-middle{
+  display: contents;
+}
+
+.search {
+  width: 200px;
+  margin-right: 60px;
+}
+
+.micres {
+  display: none;
+}
+
+.gridVideos {
+  width: 100vw;
+}
+
+.main-grid {
+  grid-template-columns: 0% 100%;
+}
+.shortcutItems {
+  display: none;
+}
+
+.buttons-bar {
+  left: 2%;
+  right: 2%;
+  gap: 10px;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.sidebar {
+  display: none;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+
+  .main-grid {
+    grid-template-columns: 20% 79%;
+    padding-left: 0px;
+  }
+
+  #buttonMenu {
+    display: contents;
+  }
+
+  .nav-middle {
+    display: contents;
+  }
+  
+  .search {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .main-grid {
+    grid-template-columns: 20% 79%;
+    padding-left: 0px;
+  }
+
+  #buttonMenu {
+    display: contents;
+  }
+
+  .nav-middle {
+    display: contents;
+  }
+  
+  .search {
+    width: 500px;
+  }
+
+.gridVideos {
+  grid-template-columns: repeat(4, 350px);
+}
+
+.gridVideos2 {
+  grid-template-columns: repeat(4, 350px);
+}
+
+.gridVideos2 img{
+  grid-template-columns: repeat(4, 250px);
+}
+
+
 }
